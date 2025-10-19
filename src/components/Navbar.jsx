@@ -41,7 +41,7 @@ export const Navbar = () => {
 
                     <span className="relative z-10">
                         <span className="text-glow text-foreground">
-                            Sohaib Sikandar 
+                            Sohaib Sikandar {" "}
                         </span>
                          Portfolio
                     </span>

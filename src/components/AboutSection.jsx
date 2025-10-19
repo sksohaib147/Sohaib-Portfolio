@@ -1,3 +1,7 @@
+import { Code, User, Briefcase } from "lucide-react";
+
+
+
 export const AboutSection = () => {
 
     return(
@@ -42,7 +46,62 @@ export const AboutSection = () => {
 
                     </div>
 
-                    <div>
+
+
+                    <div className="grid grid-cols-1 gap-6 ">
+                        <div className="gradient-border p-6 card-hover" >
+
+                            <div className="flex items-start gap-4 ">
+                                
+                                <div className="p-3 rounded-full bg-primary/10 ">
+                                <Code  className="h-6 w-6 text-primary" />
+                                </div>
+
+                                <div className="text-left ">
+                                    <h4 className="font-semibold text-lg ">Web Development</h4>
+
+                                    <p className="text-muted-foreground ">Creating responsive and user-friendly web applications using React.js and Tailwind CSS. </p>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="gradient-border p-6 card-hover" >
+                        <div className="flex items-start gap-4 ">
+                                <div className="p-3 rounded-full bg-primary/10 ">
+                                <User  className="h-6 w-6 text-primary" />
+
+                                </div>
+
+                                <div className="text-left ">
+                                    <h4 className="font-semibold text-lg ">UI/UX</h4>
+
+                                    <p className="text-muted-foreground ">Creating intuitive and visually appealing user interfaces. </p>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="gradient-border p-6 card-hover" >
+                        <div className="flex items-start gap-4 ">
+                                <div className="p-3 rounded-full bg-primary/10 ">
+                                <Briefcase  className="h-6 w-6 text-primary" />
+
+                                </div>
+
+                                <div className="text-left ">
+                                    <h4 className="font-semibold text-lg ">Project Management</h4>
+
+                                    <p className="text-muted-foreground ">Delivered professional web solutions for global clients, ensuring timely project delivery and high client satisfaction.</p>
+
+
+                                </div>
+
+                            </div></div> 
                         
                     </div>
 
