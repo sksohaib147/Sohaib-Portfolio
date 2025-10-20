@@ -1,3 +1,4 @@
+import React from 'react';
 import { Code, User, Briefcase } from "lucide-react";
 
 
