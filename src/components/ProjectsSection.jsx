@@ -6,7 +6,7 @@ const projects = [
         title: "Paws and Claws",
         description: "Pet Sale Purchase and pet adoption website for Cats Dogs and Rabbits ",
         image: "/Projects/project1.png",
-        tags: ["React", "JavaScript", "CSS"],
+        tags: ["React", "JavaScript", " Tailwind CSS"],
         demoUrl: "#",
         githubUrl: "#",
 
@@ -14,11 +14,11 @@ const projects = [
 
     {
       id: 2,
-      title: "Orbit Analytics Dashboard",
+      title: "Gemini Clone ",
       description:
         "Interactive analytics dashboard with data visualization and filtering capabilities.",
       image: "/Projects/project2.png",
-      tags: ["TypeScript", "D3.js", "Next.js"],
+      tags: ["React Js", "CSS"],
       demoUrl: "#",
       githubUrl: "#",
     },
