@@ -37,7 +37,15 @@ export const Navbar = () => {
         
         >
             <div className="container flex items-center justify-between">
-                <a href="#hero" className="text-xl font-bold text-primary flex items-center "> 
+                <button 
+                    onClick={() => {
+                        const element = document.querySelector('#hero');
+                        if (element) {
+                            element.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
+                    className="text-xl font-bold text-primary flex items-center"
+                > 
 
                     <span className="relative z-10">
                         <span className="text-glow text-foreground">
@@ -45,7 +53,7 @@ export const Navbar = () => {
                         </span>
                          Portfolio
                     </span>
-                </a> 
+                </button> 
 
 
 
@@ -54,9 +62,18 @@ export const Navbar = () => {
                 <div className="hidden md:flex space-x-8">
                     {navItems.map((item,key) => (
 
-                         <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                         <button 
+                            key={key} 
+                            onClick={() => {
+                                const element = document.querySelector(item.href);
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                        >
                             {item.name}
-                         </a>
+                         </button>
 
 
                     ))}
@@ -74,9 +91,19 @@ export const Navbar = () => {
                 <div className="flex flex-col space-y-8 text-xl">
                     {navItems.map((item,key) => (
 
-                         <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300"  onClick={() => setIsMenuOpen(false)}>
+                         <button 
+                            key={key} 
+                            onClick={() => {
+                                const element = document.querySelector(item.href);
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                                setIsMenuOpen(false);
+                            }}
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                        >
                             {item.name}
-                         </a>
+                         </button>
 
 
                     ))}

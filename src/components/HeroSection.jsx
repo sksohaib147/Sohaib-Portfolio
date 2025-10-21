@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => {
     return (
-        <section id="#hero " className="relative min-h-screen flex flex-col items-center justify-center px-4 ">
+        <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-4 ">
 
             <div className="container max-w-4xl mx-auto z-10 text-center">
                 <div className="space-y-6">
@@ -17,10 +17,17 @@ export const HeroSection = () => {
                     </p>
 
                     <div className=" pt-4 opacity-0 animate-fade-in-delay-4 ">
-                        <a href=" #projects" className="cosmic-button"> 
+                        <button 
+                            onClick={() => {
+                                const element = document.querySelector('#projects');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                            className="cosmic-button"
+                        > 
                             View My Projects
-
-                        </a>
+                        </button>
                     </div>
 
 
