@@ -40,7 +40,7 @@ export  function ProjectsSection() {
     <section id="projects  " className="py-24 px-4 relative">
       <div className="container max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4  ">  {" "}
-          Featured
+          Featured {" "}
           <span className="text-primary">Projects </span>
 
         </h2>
