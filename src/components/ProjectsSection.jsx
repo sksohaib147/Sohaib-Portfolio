@@ -3,8 +3,8 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Description of Project 1",
+        title: "Paws and Claws",
+        description: "Pet Sale Purchase and pet adoption website for Cats Dogs and Rabbits ",
         image: "/Projects/project1.png",
         tags: ["React", "JavaScript", "CSS"],
         demoUrl: "#",
