@@ -8,7 +8,7 @@ export const Footer = () => {
 
             <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary"
+                className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary cursor-pointer"
                 aria-label="Scroll to top"
             >
                 <ArrowUp size={20} />

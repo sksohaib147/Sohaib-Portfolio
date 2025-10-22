@@ -24,7 +24,7 @@ export const HeroSection = () => {
                                     element.scrollIntoView({ behavior: 'smooth' });
                                 }
                             }}
-                            className="cosmic-button"
+                            className="cosmic-button cursor-pointer"
                         > 
                             View My Projects
                         </button>
